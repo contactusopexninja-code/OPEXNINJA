@@ -54,7 +54,7 @@ body{
 .card-icon{font-size:26px;margin-bottom:10px}
 
 /* About list */
-.about-list{margin:12px 0 0;padding-left:18px;color:var(--muted)}
+.about-list{margin:12px 0 0;padding-left:18px;color:var(--cardbg)}
 
 /* Form */
 .lead-form{background:var(--card-bg);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,20,30,0.06);max-width:640px;margin-top:12px}
