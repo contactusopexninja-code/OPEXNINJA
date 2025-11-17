@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="OPEX NINJA logo">
+  <rect rx="18" width="120" height="120" fill="#0b2242"/>
+  <g transform="translate(18,18)" fill="#0ea5a4">
+    <path d="M22 18 L34 18 L34 42 L22 42 Z" />
+    <path d="M42 12 L78 12 L66 42 L42 42 Z" />
+  </g>
+  <text x="14" y="102" font-family="Arial, sans-serif" font-size="12" fill="#fff">OPEX NINJA</text>
+</svg>

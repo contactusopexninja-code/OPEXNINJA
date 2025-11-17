@@ -1,0 +1,82 @@
+:root{
+  --brand:#0b2242;
+  --accent:#0ea5a4;
+  --bg:#f4f4f4;
+  --card-bg:#ffffff;
+  --text:#141414;
+  --muted:#586066;
+  --radius:12px;
+  --container-width:1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+/* Layout */
+.container{max-width:var(--container-width);margin:0 auto;padding:0 20px}
+.site-header{background:linear-gradient(180deg,var(--brand),#09304f);color:#fff;padding:22px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.logo{width:56px;height:56px}
+.brand-text{font-weight:700;font-size:1.15rem;letter-spacing:0.6px}
+
+/* Nav */
+.main-nav{position:relative}
+.nav-list{list-style:none;margin:0;padding:0;display:flex;gap:18px}
+.nav-list a{color:#e6eef7;text-decoration:none;font-weight:600}
+.nav-toggle{display:none;background:transparent;border:0;color:#fff;font-size:20px}
+
+/* Hero */
+.hero{padding:48px 0;text-align:center}
+.hero h1{font-size:2.1rem;margin:4px 0}
+.lead{color:#d1e5f1;font-size:1.05rem;max-width:800px;margin:0 auto}
+.cta{display:inline-block;margin-top:18px;background:var(--accent);color:#053333;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700}
+
+/* Sections */
+.section{padding:56px 0}
+.section.alt{background:#fff}
+.section-title{font-size:1.4rem;margin:0 0 8px}
+.section-sub{color:var(--muted);margin-bottom:24px}
+
+/* Services grid */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--card-bg);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,20,30,0.06);text-align:left;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(12,20,30,0.10)}
+.card-icon{font-size:26px;margin-bottom:10px}
+
+/* About list */
+.about-list{margin:12px 0 0;padding-left:18px;color:var(--muted)}
+
+/* Form */
+.lead-form{background:var(--card-bg);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,20,30,0.06);max-width:640px;margin-top:12px}
+.lead-form label{display:block;margin-bottom:6px;font-weight:600}
+.lead-form input, .lead-form textarea{
+  width:100%;padding:12px;border:1px solid #e2e8f0;border-radius:8px;margin-bottom:12px;font-size:15px
+}
+.lead-form button{display:inline-block;background:var(--brand);color:#fff;border:none;padding:12px 18px;border-radius:8px;font-weight:700;cursor:pointer;width:100%}
+.form-status{margin-top:12px;color:var(--muted)}
+
+/* Footer */
+.site-footer{background:var(--brand);color:#fff;padding:20px 0;margin-top:40px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.footer-links a{color:#cfeef0;text-decoration:none}
+
+/* Responsive */
+@media (max-width:800px){
+  .header-inner{flex-direction:row}
+  .nav-toggle{display:inline-block}
+  .nav-list{position:absolute;right:20px;top:58px;flex-direction:column;background:rgba(255,255,255,0.04);padding:12px;border-radius:8px;display:none}
+  .nav-list a{color:#fff}
+  .nav-list.show{display:flex}
+  .hero h1{font-size:1.6rem}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+}
